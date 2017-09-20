@@ -104,6 +104,14 @@ public class MainActivity extends AppCompatActivity {
                         if (drawerItem != null) {
                             Intent intent = null;
 
+                            if(drawerItem.getIdentifier() == 2001){
+                                intent = new Intent(MainActivity.this,Profile.class);
+                                startActivity(intent);
+                            }
+                            else if(drawerItem.getIdentifier() == 2){
+
+                            }
+
                         }
 
                         return false;
